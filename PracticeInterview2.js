@@ -189,6 +189,10 @@ words = ['a', 'b', 'c']
 expected = ['a', 'b', 'c']
 assertEqual(alphabeticalOrdering(words), expected, 'Test one character sequence')
 
+words = ['a', 'b', 'c', 'a']
+expected = ['a', 'b', 'c']
+assertEqual(alphabeticalOrdering(words), expected, 'Test one character sequence 2')
+
 words = ['aaaaaa']
 test = () => alphabeticalOrdering(words)
 assertThrowsError(test, 'Test multiple characters => insufficient data (single word)')
